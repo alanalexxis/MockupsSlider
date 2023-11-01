@@ -15,9 +15,18 @@
 
     <style>
       /* Estilos para el fondo blanco */
-      html {
-        background-color: white; /* Establece el fondo del documento HTML en blanco */
-      }
+      html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* cursor: pointer; */
+        }
       /* Estilos para el cuadrado azul en la esquina superior derecha */
       .inventario-registrar {
         position: absolute;
