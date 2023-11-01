@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imagen a pantalla completa con botón y redirección</title>
+    <style>
+        /* Estilo para hacer que la imagen ocupe toda la pantalla */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* cursor: pointer; */
+        }
+
+        /* Estilo para el botón */
+        .boton {
+            position: absolute;
+            top: 420px;
+            left: 830px;
+            background-color: #ffffff00;
+            padding: 10px;
+            cursor: pointer;
+            color: #ffffff00;
+        }
+        #boton2{
+            position: absolute;
+            top: 5px;
+            left: 250px;
+            background-color: #ffffff00;
+            padding: 10px;
+            cursor: pointer;
+            /* color: #ffffff00; */
+        }
+    </style>
+</head>
+<body>
+    <a class="boton" id="boton2" href="mockup1.html"">Inicio</a>
+    <a class="boton" href="mockup3.html">ACCDER</a>
+    <img src="2.png" alt="Imagen a pantalla completa">
+    
+</body>
+</html>
