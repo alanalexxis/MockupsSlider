@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver mockups</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row mb-4 col-md-4 offset-md-4">
+            <form id="formRedireccion" class="w-100">
+                <div class="input-group">
+                    <select class="custom-select" id="opcion" name="opcion">
+                        <option selected>Acceder como usuario de:</option>
+                        <option value="opcion1">Laboratorio</option>
+                        <option value="opcion2">Control Escolar</option>
+                        <option value="opcion3">Dirección</option>
+                        <option value="opcion4">Enefermeria</option>
+                        <option value="opcion5">Finanza</option>
+                        <option value="opcion6">Herramientas</option>
+                        <option value="opcion7">Recepción</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">ACCEDER</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('formRedireccion').addEventListener('submit', function (e) {
+            e.preventDefault(); // Previene el envío del formulario
+
+            var opcionSeleccionada = document.getElementById('opcion').value;
+            switch (opcionSeleccionada) {
+                case 'opcion1':
+                    window.location.href = '../laboratorio/inicio.html'; 
+                    break;
+                case 'opcion2':
+                    window.location.href = '../controlescolar/inicio.html'; 
+                    break;
+                case 'opcion3':
+                    window.location.href = '../direccion/inicio.html'; 
+                    break;
+                case 'opcion4':
+                    window.location.href = '../enfermeria/inicio.html'; 
+                    break;
+                case 'opcion5':
+                    window.location.href = '../finanzas/inicio.html'; 
+                    break;
+                case 'opcion6':
+                    window.location.href = '../herramientas/inicio.html'; 
+                    break;
+                case 'opcion7':
+                    window.location.href = '../recepcion/inicio.html'; 
+                    break;
+                default:
+                    break;
+            }
+        });
+    </script>
+</body>
+
+</html>
