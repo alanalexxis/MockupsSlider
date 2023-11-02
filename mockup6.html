@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Imagen a pantalla completa con botón y redirección</title>
+    <title>Carrusel de mockups</title>
     <style>
-        /* Estilo para hacer que la imagen ocupe toda la pantalla */
-            * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      /* Estilos para el fondo blanco */
+       *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-      .fondo {
-        width: 1450px;
-        height: 100vh;
-        margin: 0 auto;
-        /* background-color: red; */
-        position: relative;
-        text-align: center;
-        font-family: calibri;
-      }
+        /* .container{
+            background-color: red;
 
-      img {
-        object-fit: contain;
-        /* cursor: pointer; */
-      }
+        } */
 
-        /* Estilo para el botón */
-        .boton {
+        .fondo{
+            width: 1200px;
+            height: 100vh;
+            margin: 0 auto;
+            /* background-color: red; */
+            position: relative;
+            text-align: center;
+            font-family: calibri;
+        }
+
+        .fondo img{
+            /* width: 100%; */
+            /* height: 100vh; */
+            object-fit: contain;
+        }
+
+        .btn{
             position: absolute;
-            top: 40px;
-            left: 930px;
+            color: rgba(0, 0, 0, 0);
+        }
+
+        #boton{
+            position: absolute;
+            top: 50px;
+            left: 885px;
             background-color: #ffffff00;
             padding: 10px;
             cursor: pointer;
-            color: #ffffff00;
+            /* color: #ffffff00; */
         }
 
         #boton2{
             position: absolute;
-            top: 5px;
-            left: 310px;
+            top: 10px;
+            left: 170px;
             background-color: #ffffff00;
             padding: 10px;
             cursor: pointer;
@@ -48,8 +56,8 @@
         }
         #boton3{
             position: absolute;
-            top: 520px;
-            left: 312px;
+            top: 620px;
+            left: 180px;
             background-color: #ffffff00;
             padding: 10px;
             cursor: pointer;
@@ -57,8 +65,8 @@
         }
         #boton4{
             position: absolute;
-            top: 520px;
-            left: 420px;
+            top: 622px;
+            left: 300px;
             background-color: #ffffff00;
             padding: 10px;
             cursor: pointer;
@@ -67,16 +75,15 @@
     </style>
 </head>
 <body>
-    <a class="boton" href="mockup2.html">LOG OUT</a>
-    <a class="boton" id="boton2" href="mockup13.html"">INVENTARIO</a>
-    <a class="boton" id="boton3" href="mockup4.html">ACTUALIZAR</a>
-    <a class="boton" id="boton4" href="mockup4.html">REGRESAR</a>
-    <!-- <a class="boton" id="boton5" href="mockup6.html">EDITAR</a>
-    <a class="boton" id="boton6" href="mockup6.html">EDITAR</a>
-    <a class="boton" id="boton7" href="mockup4.html">ELIMINAR</a>
-    <a class="boton" id="boton8" href="mockup4.html">ELIMINAR</a> -->
-
-    <img src="6.png" alt="Imagen a pantalla completa">
-
+    <div class="container">
+        <div class="fondo">
+            <img src="6.png" alt="Imagen a pantalla completa">
+            
+            <a class="btn"  id="boton" href="mockup2.html">LOG OUT</a>
+            <a class="btn" id="boton2" href="mockup13.html">INVENTARIO</a>
+            <a class="btn" id="boton3" href="mockup4.html">ACTUALIZAR</a>
+            <a class="btn" id="boton4" href="mockup4.html">REGRESAR</a>
+        </div>
+    </div>
 </body>
 </html>
