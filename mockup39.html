@@ -12,21 +12,29 @@
       crossorigin="anonymous"
     />
 
-
     <style>
       /* Estilos para el fondo blanco */
-      html, body {
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
-        }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* Estilos para el fondo blanco */
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            /* cursor: pointer; */
-        }
+      .fondo {
+        width: 1450px;
+        height: 100vh;
+        margin: 0 auto;
+        /* background-color: red; */
+        position: relative;
+        text-align: center;
+        font-family: calibri;
+      }
+
+      img {
+        object-fit: contain;
+        /* cursor: pointer; */
+      }
       /* Estilos para el cuadrado azul en la esquina superior derecha */
       .inventario-registrar {
         position: absolute;
@@ -34,10 +42,9 @@
         right: 880px; /* Ajusta la distancia desde la derecha */
         width: 100px;
         height: 40px;
-      
       }
-          /* Estilos para el enlace dentro del cuadrado */
-          .inventario-registrar a {
+      /* Estilos para el enlace dentro del cuadrado */
+      .inventario-registrar a {
         display: block;
         width: 100%;
         height: 100%;
@@ -49,10 +56,9 @@
         right: 519px; /* Ajusta la distancia desde la derecha */
         width: 30px;
         height: 500px;
-      
       }
-          /* Estilos para el enlace dentro del cuadrado */
-          .inventario-editar a {
+      /* Estilos para el enlace dentro del cuadrado */
+      .inventario-editar a {
         display: block;
         width: 100%;
         height: 100%;
@@ -64,7 +70,6 @@
         right: 1190px; /* Ajusta la distancia desde la derecha */
         width: 40px;
         height: 40px;
-    
       }
       /* Estilos para el enlace dentro del cuadrado */
       .home a {
@@ -79,7 +84,6 @@
         right: 310px; /* Ajusta la distancia desde la derecha */
         width: 60px;
         height: 40px;
-    
       }
       /* Estilos para el enlace dentro del cuadrado */
       .logout a {
@@ -88,14 +92,13 @@
         height: 100%;
         text-decoration: none;
       }
-      
+
       .inventario {
         position: absolute;
         top: 20px; /* Ajusta la distancia desde la parte superior */
         right: 1030px; /* Ajusta la distancia desde la derecha */
         width: 80px;
         height: 20px;
-    
       }
       /* Estilos para el enlace dentro del cuadrado */
       .inventario a {
@@ -111,7 +114,6 @@
         right: 930px; /* Ajusta la distancia desde la derecha */
         width: 80px;
         height: 20px;
-    
       }
       /* Estilos para el enlace dentro del cuadrado */
       .enfermeria a {
@@ -120,15 +122,14 @@
         height: 100%;
         text-decoration: none;
       }
- 
-          /* Estilos para el cuadrado azul en la esquina superior derecha */
-          .salones {
+
+      /* Estilos para el cuadrado azul en la esquina superior derecha */
+      .salones {
         position: absolute;
         top: 20px; /* Ajusta la distancia desde la parte superior */
         right: 850px; /* Ajusta la distancia desde la derecha */
         width: 70px;
         height: 20px;
-    
       }
       .salones a {
         display: block;
@@ -137,14 +138,13 @@
         text-decoration: none;
       }
 
-            /* Estilos para el cuadrado azul en la esquina superior derecha */
-            .pasillos {
+      /* Estilos para el cuadrado azul en la esquina superior derecha */
+      .pasillos {
         position: absolute;
         top: 20px; /* Ajusta la distancia desde la parte superior */
         right: 785px; /* Ajusta la distancia desde la derecha */
         width: 60px;
         height: 20px;
-    
       }
       .pasillos a {
         display: block;
@@ -152,14 +152,13 @@
         height: 100%;
         text-decoration: none;
       }
-              /* Estilos para el cuadrado azul en la esquina superior derecha */
-              .sanitarios {
+      /* Estilos para el cuadrado azul en la esquina superior derecha */
+      .sanitarios {
         position: absolute;
         top: 20px; /* Ajusta la distancia desde la parte superior */
         right: 700px; /* Ajusta la distancia desde la derecha */
         width: 65px;
         height: 20px;
-    
       }
       .sanitarios a {
         display: block;
@@ -168,14 +167,13 @@
         text-decoration: none;
       }
 
-               /* Estilos para el cuadrado azul en la esquina superior derecha */
-               .nuevo {
+      /* Estilos para el cuadrado azul en la esquina superior derecha */
+      .nuevo {
         position: absolute;
         top: 20px; /* Ajusta la distancia desde la parte superior */
         right: 620px; /* Ajusta la distancia desde la derecha */
         width: 65px;
         height: 20px;
-    
       }
       .nuevo a {
         display: block;
@@ -183,7 +181,6 @@
         height: 100%;
         text-decoration: none;
       }
-    
 
       body {
         display: flex;
@@ -198,8 +195,9 @@
       }
     </style>
   </head>
-  <body>
-    
+   <body>
+    <div class="container">
+      <div class="fondo">
     <div class="home">
       <a href="./mockup3.html"></a>
     </div>
@@ -228,4 +226,3 @@
     <script src="main.js"></script>
   </body>
 </html>
-
